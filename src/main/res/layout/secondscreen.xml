@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/secondscreen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:orientation="vertical"
+    tools:context=".Screen2"
+    android:background="@drawable/newgamebg"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+
+            android:background="@drawable/back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/retour"
+            android:onClick="onClicexit"
+            android:layout_marginLeft="17dp"
+            android:layout_marginStart="17dp"
+            android:layout_alignTop="@+id/reset"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+
+        <laco.projet1.GameBoard
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:id="@+id/boardSurface"
+            android:layout_below="@+id/reset"
+            android:layout_alignLeft="@+id/progressBar"
+            android:layout_alignStart="@+id/progressBar" />
+
+        <ProgressBar
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:id="@+id/progressBar"
+            android:layout_below="@+id/boardSurface"
+            android:layout_marginTop="20dp"
+            android:layout_alignLeft="@+id/retour"
+            android:layout_alignStart="@+id/retour"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <Button
+            android:text="Reset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/reset"
+            android:layout_marginTop="23dp"
+            android:onClick="onClickReset"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/retour"
+            android:layout_toEndOf="@+id/retour"
+            android:layout_marginLeft="42dp"
+            android:layout_marginStart="42dp" />
+
+        <ToggleButton
+            android:text="ToggleButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/toggleButton"
+            android:layout_alignTop="@+id/reset"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_above="@+id/boardSurface" />
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/progressBar"
+        android:layout_alignEnd="@+id/progressBar"
+        android:layout_alignLeft="@+id/progressBar"
+        android:layout_alignStart="@+id/progressBar">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:src="@drawable/p1d_trans"
+                    android:id="@+id/imageView1" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:src="@drawable/uc_trans"
+                    android:id="@+id/imageView2"
+                    android:layout_below="@id/imageView1"
+                    />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:src="@drawable/i1d_trans"
+                    android:id="@+id/imageView3"
+                    android:layout_below="@id/imageView2"/>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:src="@drawable/z1b_trans"
+                    android:id="@+id/imageView4"
+                    android:layout_below="@id/imageView3"/>
+
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:src="@drawable/n2a_trans"
+                    android:id="@+id/imageView5"
+                    android:layout_below="@id/imageView4"/>
+
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:src="@drawable/vc_trans"
+                    android:id="@+id/imageView6"
+                    android:layout_below="@id/imageView5"/>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:src="@drawable/wa_trans"
+                    android:id="@+id/imageView7"
+                    android:layout_below="@id/imageView6"/>
+
+
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:src="@drawable/tc_trans"
+                    android:id="@+id/imageView8"
+                    android:layout_below="@id/imageView7"/>
+
+
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:src="@drawable/l1a_trans"
+                    android:id="@+id/imageView9"
+                    android:layout_below="@id/imageView8"/>
+
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:src="@drawable/x_trans"
+                    android:id="@+id/imageView10"
+                    android:layout_below="@id/imageView9"/>
+
+
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:src="@drawable/f1c_trans"
+                    android:id="@+id/imageView11"
+                    android:layout_below="@id/imageView10"/>
+
+
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:src="@drawable/ia_trans"
+                    android:id="@+id/imageView12"
+                    android:layout_below="@id/imageView10"/>
+
+
+
+
+            </LinearLayout>
+        </ScrollView>
+
+
+
+    </RelativeLayout>
+
+</LinearLayout>

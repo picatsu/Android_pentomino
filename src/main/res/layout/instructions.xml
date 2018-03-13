@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/readme">
+
+    <Button
+        android:text="Back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button"
+        android:onClick="onClickback"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+
+                android:textColor="#FFFFFF"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView1"
+                android:text="
+                #L.A.Pentodroid
+Réalisé par:
+-> Achraf Lahkiky
+-> Loona Capodicasa
+"
+                android:textSize="20dp"
+                />
+
+            <TextView
+                android:textColor="#FFFFFF"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView2"
+                android:text="          Projet d'application Android en Java pour un cours de l'université Pierre et Marie Curie.
+
+ "
+                android:textSize="20dp"
+                />
+
+            <TextView
+                android:textColor="#FFFFFF"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView3"
+                android:text="     ## Comment jouer
+Il faut positionner toutes les pièces, appelé Pentomino, sur la grille afin de la remplir entièrement et ne laisser aucune case blanche
+"
+                android:textSize="20dp"
+                />
+
+            <TextView
+                android:textColor="#FFFFFF"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView4"
+                android:text="    ## Drag /drop
+Les Pentominos sont selectionné depuis le scrollview avec un longClick, le carreau noir du pentomno fait reference a la tete de la pièce, en effet, le carreau noir represente la case où on veux deposé la pièce.
+"
+                android:textSize="20dp"
+                />
+            <TextView
+                android:textColor="#FFFFFF"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView5"
+                android:text="    ## Undo/Reverse
+Quand on se trompe dans le deposer, il suffit de reclické sur la grille pour l'enlever, cependant cela ne marche qu'une seule fois, on pas ne peut remonté dans l'odre chronologique de depots qu'une seule fois dans le temps.
+"
+                android:textSize="20dp"
+                />
+
+            <TextView
+                android:textColor="#FFFFFF"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView6"
+                android:text="
+## Reset
+Si la partie est fini, le bouton reset va vidé la grille et relancé une partie, Sinon une music de fin de partie se lance avant de relancé la partie.
+"
+                android:textSize="20dp"
+                />
+            <TextView
+                android:textColor="#FFFFFF"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView7"
+                android:text="
+                   ## Ordre des fenetre
+
+	-- Titre   --
+	|New Game    | ---> | jeu  : grille + liste pentominos |
+	|Difficuly   | ---> | aide : -> aide progressif        |
+	|Instructions| ---> | Instructions sur le jeu          |
+	|Quit        | ---> EXIT
+"
+                android:textSize="20dp"
+                />
+            <TextView
+                android:textColor="#FFFFFF"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView8"
+                android:text="        ## Autres
+
+Developper sous Android studio pour API 15 minimum.
+"
+                android:textSize="20dp"
+                />
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
